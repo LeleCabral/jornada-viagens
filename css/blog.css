@@ -1,0 +1,192 @@
+.blog.japao {
+  padding: 30px;
+}
+
+.blog .item,
+.curiosities {
+  margin-bottom: 80px;
+}
+
+.blog .item.split .img-item {
+  width: 100%;
+  height: 368px;
+  margin-top: 24px;
+  background-image: url(../img/blog/Tokyo-blog-mobile.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.blog .item.accommodation .img-item.banner {
+  width: 100%;
+  height: 368px;
+  background-image: url(../img/blog/pnte-tokyo-banner.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  margin-top: 24px;
+}
+
+.blog .img-caption {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #777;
+}
+
+.curiosities .content-title {
+  margin-top: 40px; /* Espaço antes de cada título novo */
+  margin-bottom: 16px;
+}
+
+.curiosities .content-text {
+  margin-bottom: 24px; /* Espaço entre parágrafos */
+  line-height: 1.6;
+}
+
+.post-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.post .item .img-item {
+  width: 100%;
+  height: 368px;
+}
+.post .item.hiroshima .img-item {
+  background: url(../img/blog/hiroshima-mobile.png);
+  background-size: cover;
+}
+.post .item.kyoto .img-item {
+  background: url(../img/blog/kyoto-mobile.png);
+  background-size: cover;
+}
+
+.post .item header h3 {
+  margin: 24px 0;
+}
+.post .item p {
+  margin-bottom: 24px;
+}
+.post .button {
+  width: 100%;
+}
+
+.main-footer {
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.main-footer .footer-content {
+  text-align: center;
+}
+
+.main-footer .footer-content img {
+  margin-bottom: 16px;
+}
+
+.main-footer .footer-social {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* Alinhamento dos ícones */
+.main-footer .footer-social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .post {
+    width: 648px;
+  }
+  .post .item .img-item {
+    width: 100%;
+    height: 452px;
+  }
+  .post .item.hiroshima .img-item {
+    background: url(../img/blog/hiroshima-tablet.png);
+    background-size: cover;
+  }
+  .post .item.kyoto .img-item {
+    background: url(../img/blog/kyoto-tablet.png);
+    background-size: cover;
+  }
+  .post .button {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .blog .item.split {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    text-align: left;
+  }
+
+  .blog .item.split .item-text-container {
+    flex: 1;
+  }
+
+  .blog .item.split .img-item {
+    flex: 1;
+    margin-top: 0;
+    height: 450px;
+    background-image: url(../img/blog/tokyo-blog-desktop.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .blog .item.accommodation .img-item.banner {
+    height: 500px;
+  }
+
+  .post {
+    width: 900px;
+  }
+
+  .post .item .img-item {
+    width: 100%;
+    height: 452px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .main-footer {
+      flex-direction: row;
+      justify-content: space-between; /* Empurra para os lados */
+      align-items: flex-end; /* Alinha as bases */
+      padding: 60px 120px; /* Respiro lateral */
+    }
+
+    .main-footer .footer-content {
+      text-align: left;
+    }
+
+    .main-footer .footer-social {
+      text-align: right;
+      margin-top: 0;
+    }
+
+    /* Garante que os ícones fiquem na direita */
+    .main-footer .footer-social .social-links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .post {
+    width: 1200px;
+  }
+  .post-items {
+    flex-direction: row;
+  }
+}

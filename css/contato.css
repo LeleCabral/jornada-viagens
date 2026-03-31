@@ -1,0 +1,97 @@
+.contact-form-section {
+  padding: 80px 24px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.contact-form-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.red-line {
+  width: 80px;
+  height: 4px;
+  background-color: var(--secondary-color); /* A cor vermelha que você já usa */
+  border: none;
+  margin: 10px auto 30px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Estilo dos Inputs */
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc; /* Linha cinza clara */
+  padding: 12px 5px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Efeito ao clicar no campo */
+form input:focus {
+  border-bottom-color: var(--secondary-color);
+}
+
+/* Organização em linha (Telefone e Email) */
+.input-row {
+  display: flex;
+  gap: 40px;
+}
+
+/* Textarea (o campo de mensagem) */
+textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  color: #999;
+}
+
+/* Botão Enviar */
+.btn-send {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 15px 80px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.btn-send:hover {
+  opacity: 0.9;
+}
+
+/* Ajuste Responsivo para Mobile */
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

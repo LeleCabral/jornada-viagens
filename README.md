@@ -1,4 +1,4 @@
-✈️ Jornada Viagens - Landing Page Responsiva
+<h2>✈️ Jornada Viagens - Landing Page Responsiva</h2>
 
 📌 Sobre o Projeto:
 Este é um projeto de uma agência de viagens moderna, focado em visual storytelling e experiência do usuário (UX).
